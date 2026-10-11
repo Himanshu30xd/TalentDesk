@@ -141,3 +141,12 @@ main{padding-top:0;padding-bottom:0}.head{align-items:center;margin-bottom:24px}
 @media(prefers-reduced-motion:reduce){.sidebar{transition:none}}
 
 .loading{display:grid;place-items:center;min-height:60vh;color:#64748b;font:500 15px Inter,system-ui,sans-serif}
+
+/* Mobile top bar: show logo and name at the left (sidebar is hidden on phones) */
+.top-brand{display:none}
+@media(max-width:760px){
+  .top-brand{display:flex;font-size:18px;letter-spacing:-.3px}
+  .top-brand .ic{background:linear-gradient(135deg,#4f46e5,#7c3aed);width:34px;height:34px;padding:7px;border-radius:10px}
+  .topbar .crumb{display:none}
+  .topbar .burger{margin-left:auto}
+}

@@ -77,7 +77,7 @@ $('#root').innerHTML = `
       <div class="sidebar-foot"><span class="avatar">TD</span><div><b>TalentDesk</b><small>Hiring workspace</small></div></div>
     </aside>
     <div class="app-area">
-      <header class="topbar"><button class="burger" id="burger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="sidebar">${ic('menu')}</button><div class="crumb">Workspace <span>/</span> <b>${(PAGES.find(p => p[0] === page) || PAGES[0])[2]}</b></div><span class="topbar-tag">Recruitment workspace</span></header>
+      <header class="topbar"><a class="brand top-brand" href="index.html" aria-label="TalentDesk home">${ic('briefcase')}<span>TalentDesk</span></a><button class="burger" id="burger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="sidebar">${ic('menu')}</button><div class="crumb">Workspace <span>/</span> <b>${(PAGES.find(p => p[0] === page) || PAGES[0])[2]}</b></div><span class="topbar-tag">Recruitment workspace</span></header>
       <main class="w app-main" id="main"></main>
     </div>
   </div>
